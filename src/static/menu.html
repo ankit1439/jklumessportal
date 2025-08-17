@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Menu - College Mess Feedback Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3>College Mess Portal</h3>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link active">Weekly Menu</a>
+                <a href="menu-pdf.html" class="nav-link">Menu PDF</a>
+                <a href="index.html#feedback" class="nav-link">Feedback</a>
+                <a href="index.html#complaints" class="nav-link">Complaints</a>
+                <a href="admin-login.html" class="nav-link">Admin</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Coming Soon Section -->
+    <section class="coming-soon-section">
+        <div class="container">
+            <div class="coming-soon-content">
+                <div class="coming-soon-icon">🚧</div>
+                <h1 class="coming-soon-title">Weekly Menu Coming Soon!</h1>
+                <p class="coming-soon-subtitle">We're working hard to bring you an amazing weekly menu voting system.</p>
+                <div class="coming-soon-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">🗳️</span>
+                        <span>Vote on your favorite dishes</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">📅</span>
+                        <span>Weekly meal planning</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🍽️</span>
+                        <span>Breakfast, Lunch, Snacks & Dinner</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">📊</span>
+                        <span>Real-time voting results</span>
+                    </div>
+                </div>
+                <div class="coming-soon-actions">
+                    <a href="menu-pdf.html" class="cta-button">View Current Menu PDF</a>
+                    <a href="index.html" class="cta-button secondary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('active');
+            document.getElementById('hamburger').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
